@@ -11,7 +11,9 @@ public class PersonsComparator implements Comparator<Person> {
             return -1;
         } else if (o1.getAge() > o2.getAge()) {
             return +1;
+        } else if (o1.getAge() < o2.getAge()) {
+            return -1;
         }
-        return -1;
+        return 0;
     }
 }
